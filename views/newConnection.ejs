@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <title>New Connection</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  </head>
+
+  <!-- Header/Image -->
+  <body>
+    <div id="heads">
+      <% include partials/header.ejs %>
+    </div>
+
+    <main id="all">
+      <% include partials/navigation.ejs %>
+
+      <% if (errors !== null) { %>
+      <div id="loginmsg2">
+        <ul>
+          <% errors.forEach(function(object){ %>
+          <li> <mark> <%= object.msg %> <mark> </li>
+          <% }); %>
+        </ul>
+      </div>
+
+      <form id="contact-form" action='/submit' method='POST'>
+        <label for="platform"> Platform </label>
+        <input type="text" name="Platform"/>
+        <label for="name"> Game/Name </label>
+        <input type="text" name="Name"/>
+        <label for="details"> Details </label>
+        <input type="text" name="Details"/>
+        <label for="where"> Location </label>
+        <input type="text" name="Where"/>
+        <label for="when"> Time </label>
+        <input type="datetime-local" name="When"/>
+        <input type="submit" value="Create"/>
+      </form>
+    <% } else { %>
+      <form id="contact-form" action='/submit' method='POST'>
+        <label for="platform"> Platform </label>
+        <input type="text" name="Platform"/>
+        <label for="name"> Game/Name </label>
+        <input type="text" name="Name"/>
+        <label for="details"> Details </label>
+        <input type="text" name="Details"/>
+        <label for="where"> Location </label>
+        <input type="text" name="Where"/>
+        <label for="when"> Time </label>
+        <input type="datetime-local" name="When"/>
+        <input type="submit" value="Create"/>
+      </form>
+    <% } %>
+    </main>
+
+    <!-- Footer -->
+    <div id="foots">
+      <% include partials/footer.ejs %>
+    </div>
+  </body>
+</html>

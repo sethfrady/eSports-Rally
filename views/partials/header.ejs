@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- Header image -->
+<header id="header">
+  <a href="/">
+    <img src="/assets/images/logo.jpg" alt="Esports" class="center">
+  </a>
+
+<!-- Header nav -->
+  <ul id="head-bar">
+    <% if (theUser === undefined) { %>
+    <li><a href="#">Start a new connection</a></li>
+    <li><a href="login">Login</a></li>
+    <li><a href="signup">Sign up</a></li>
+    <% } %>
+
+    <% if (theUser !== undefined) { %>
+    <li><a href="newConnection">Start a new connection</a></li>
+    <li><a href="/userConnections">My Connections</a></li>
+    <li><a href="/logout">Logout</a></li>
+    <% } %>
+  </ul>
+</header>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <title>Events</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  </head>
+
+  <!-- Header/Image -->
+  <body>
+    <div id="heads">
+      <% include partials/header.ejs %>
+    </div>
+
+    <main id="all">
+      <% include partials/navigation.ejs %>
+
+      <!-- Dynamic Pages -->
+      <div id="fortnite">
+        <h3> <%= data.connectionName %> </h3>
+        <p>
+          <img src="/assets/images/loomin.jpg" alt="Esports" class="center"> <br>
+          <br> Hosted by Loomin
+          <br> <%= data.dateTime %>
+          <br> <%= data.location %>
+        </p>
+      </div>
+      <div id="details">
+        <h4> Details </h4>
+        <p>
+          <br> <%= data.details %>
+        </p>
+      </div>
+      <div id="buttons">
+        <p> Let us know if your going! </p>
+        <% if (theUser === undefined) { %>
+        <a href="#">Yes</a>
+        <a href="#">Maybe</a>
+        <a href="#">No</a>
+        <% } %>
+        <% if (theUser != undefined) { %>
+        <a href="/rsvp?connectionID=<%= data.connectionID %>&rsvp=Yes">Yes</a>
+        <a href="/rsvp?connectionID=<%= data.connectionID %>&rsvp=Maybe">Maybe</a>
+        <a href="/rsvp?connectionID=<%= data.connectionID %>&rsvp=No">No</a>
+        <% } %>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="foots">
+      <% include partials/footer.ejs %>
+    </div>
+  </body>
+</html>

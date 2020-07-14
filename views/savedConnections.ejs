@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <title>Saved Connections</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  </head>
+
+  <!-- Header/Image -->
+  <body>
+    <div id="heads">
+      <% include partials/header.ejs %>
+    </div>
+
+    <div id="welcome">
+      <h2> Welcome, <%= theUser.firstName %> </h2>
+    </div>
+
+    <main id="all">
+      <% include partials/navigation.ejs %>
+      <div id="seth">
+        <h3> Seth's Connections </h3>
+      </div>
+      <table>
+        <tr>
+          <th>Event</th>
+          <th>Platform</th>
+          <th>Attending?</th>
+          <th>Change</th>
+          <th>Remove</th>
+        </tr>
+        <% data.forEach(function(object){ %>
+        <tr>
+          <td> <%= object.Connection.connectionName %> </td>
+          <td> <%= object.Connection.connectionPlatform %> </td>
+          <td> <%= object.rsvp %> </td>
+          <td><a href="/update?connectionID=<%= object.Connection.connectionID %>&rsvp=<%= object.rsvp %>">UPDATE</a></td>
+          <td><a href="/delete?connectionID=<%= object.Connection.connectionID %>">DELETE</a></td>
+        </tr>
+        <% }); %>
+      </table>
+    </main>
+
+    <!-- Footer -->
+    <div id="foots">
+      <% include partials/footer.ejs %>
+    </div>
+  </body>
+</html>

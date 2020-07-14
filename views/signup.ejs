@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <title>Signup</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  </head>
+
+  <!-- Header/Image -->
+  <body>
+    <div id="heads">
+      <% include partials/header.ejs %>
+    </div>
+
+    <main id="all">
+      <% include partials/navigation.ejs %>
+
+      <!-- Text/Title -->
+      <% if (errors !== null) { %>
+      <div id="loginmsg3">
+        <ul>
+          <% errors.forEach(function(error){ %>
+          <li> <mark> <%= error.msg %> <mark> </li>
+          <% }); %>
+        </ul>
+      </div>
+      <section>
+      <div id="signup">
+        <h2>
+          <br> Register for Esports Rally
+        </h2>
+        <form action='/signUp' method='POST'>
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="FirstName" required>
+        <label for="lastName"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="LastName" required>
+        <label for="uname"><b>Username/Email</b></label>
+        <input type="text" placeholder="Enter Username/Email" name="Username" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="text" placeholder="Enter Password" name="Password" required>
+        <label for="confirm"><b>Confirm Password</b></label>
+        <input type="text" placeholder="Confirm Password" name="Confirm" required>
+        <button type="submit">Sign Up</button>
+      </div>
+      </section>
+    <% } else { %>
+      <section>
+      <div id="signup">
+        <h2>
+          <br> Register for Esports Rally
+        </h2>
+        <form action='/signUp' method='POST'>
+        <label for="firstName"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="FirstName" required>
+        <label for="lastName"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="LastName" required>
+        <label for="uname"><b>Username/Email</b></label>
+        <input type="text" placeholder="Enter Username/Email" name="Username" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="text" placeholder="Enter Password" name="Password" required>
+        <label for="confirm"><b>Confirm Password</b></label>
+        <input type="text" placeholder="Confirm Password" name="Confirm" required>
+        <button type="submit">Sign Up</button>
+      </div>
+      </section>
+   <% } %>
+
+    <!-- Footer -->
+    <% include partials/footer2.ejs %>
+    </main>
+  </body>
+</html>

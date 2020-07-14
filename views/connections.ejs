@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <title>Connect</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  </head>
+
+  <!-- Header/Image -->
+  <body>
+    <div id="heads">
+      <% include partials/header.ejs %>
+    </div>
+
+    <main id="all">
+      <% include partials/navigation.ejs %>
+
+      <!-- Categories -->
+      <div class="categories">
+        <h3 id="pc"> PC </h3>
+        <h3 id="xbox"> XBOX </h3>
+        <h3 id="ps4"> PS4 </h3>
+      </div>
+        <div class="categories2">
+         <ul>
+          <% for(var i = 0; i < data.length; i++) { %>
+            <li class="cats">
+              <a href="/connection?connectionID=<%= data[i].connectionID %>">
+              <%= data[i].connectionTopic %>
+              </a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+
+    <!-- Footer -->
+    <div id="foots">
+      <% include partials/footer.ejs %>
+    </div>
+  </body>
+</html>

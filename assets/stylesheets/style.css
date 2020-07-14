@@ -1,0 +1,391 @@
+body {
+  font-family: obelixprobold, helvetica, arial, sans-serif;
+  margin: 0em;
+  background-color: violet;
+}
+
+#header {
+  height: 120px;
+  width: 100%;
+  background-color: #333;
+}
+
+#header img {
+  height: 120px;
+  width: 25%;
+}
+
+#head-bar {
+  list-style-type: none;
+  margin-top: 73px;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkmagenta;
+  float: right;
+}
+
+#nav-bar {
+  list-style-type: none;
+  margin: 40;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#pc {
+  position: relative;
+  bottom: 18px;
+}
+
+#homepage {
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+#login {
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  width: 300px;
+}
+
+#signup {
+  position: relative;
+  left: 40%;
+  width: 300px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+#loginmsg {
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 35.5%;
+  top: 75%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  width: 400px;
+}
+
+#loginmsg2 {
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 70%;
+  top: 35%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  width: 400px;
+}
+
+#loginmsg3 {
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  width: 400px;
+}
+
+mark {
+  background-color: red;
+}
+
+.categories {
+  text-align: center;
+  list-style-type: none;
+  column-count: 3;
+  column-rule: 3px double #00FFFF;
+  position: relative;
+  top: 80px;
+}
+
+.categories2 {
+  text-align: center;
+  list-style-type: none;
+  column-count: 3;
+  column-rule: 3px double #00FFFF;
+  position: relative;
+  top: 70px;
+}
+
+.new {
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  top: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.cats {
+  position: relative;
+  right: 19px;
+}
+
+.cats a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#head-bar li {
+  float: left;
+}
+
+#nav-bar li {
+  float: left;
+}
+
+#head-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#fortnite img {
+  height: 120px;
+  max-width: 8.5%;
+}
+
+#contact-form {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  left: 540px;
+}
+
+#picture {
+  height: 120px;
+  width: 25%;
+  position: relative;
+  left: 670px;
+}
+
+#esports {
+  height: 120px;
+  width: 35%;
+  position: relative;
+  left: 630px;
+}
+
+#fortnite {
+  text-align: center;
+  position: relative;
+  right: 200px;
+  top: 60px;
+}
+
+#details {
+  text-align: center;
+  position: absolute;
+  left: 750px;
+  bottom: 300px;
+}
+
+#buttons {
+  text-align: center;
+  position: absolute;
+  left: 850px;
+  bottom: 230px;
+}
+
+#buttons a {
+  padding: 5px;
+  color: white;
+  background-color: darkmagenta;
+  text-decoration: none;
+}
+
+#welcome {
+  position: absolute;
+  left: 1300px;
+  bottom: 530px;
+  color: white;
+}
+
+#seth {
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 35%;
+  text-align: center;
+  position: relative;
+  left: 500px;
+  top: 100px;
+}
+
+td, th {
+  border: 3px double aqua;
+  text-align: left;
+  padding: 8px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.nav-right {
+  float: right;
+}
+
+.active {
+  background-color: darkmagenta;
+}
+
+
+#footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#footer2 {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Bordered form
+form {
+  border: 3px solid #f1f1f1;
+} */
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type=datetime-local] {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: darkmagenta;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {
+  background-color: darkmagenta;
+} */
+
+/* Set a style for buttons */
+button {
+  background-color: darkmagenta;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* My picture for about page */
+#me {
+  text-align: center;
+}
+
+/* Class to center images */
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 49.8%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}

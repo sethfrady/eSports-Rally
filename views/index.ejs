@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  </head>
+
+  <!-- Header/Image -->
+  <body>
+    <div id="heads">
+      <% include partials/header.ejs %>
+    </div>
+
+    <main id="all">
+      <% include partials/navigation.ejs %>
+
+      <!-- Text/Title -->
+      <div id="homepage">
+        <h2>
+          <br> Welcome To eSports Rally!
+        </h2>
+        <p>
+          <br> We seek to bring competitive gamers together in a collaborative way.
+          <br> You might be wondering... how do I get started? Don't worry, it's easy!
+          <br> Click the connections page to start looking for platform specific meet ups near you!
+        </p>
+      </div>
+
+      <div id="esports">
+        <img src="/assets/images/esports.jpg" alt="Contact" class="center">
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="foots">
+      <% include partials/footer.ejs %>
+    </div>
+  </body>
+</html>
