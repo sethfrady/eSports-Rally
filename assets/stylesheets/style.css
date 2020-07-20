@@ -2,20 +2,23 @@ body {
   font-family: obelixprobold, helvetica, arial, sans-serif;
   margin: 0em;
   background-color: violet;
+  position: relative;
+  padding-bottom: 100px;
+  min-height: 100vh;
 }
 
-#header {
+.heads #header {
   height: 120px;
   width: 100%;
   background-color: #333;
 }
 
-#header img {
+.heads #header img {
   height: 120px;
   width: 25%;
 }
 
-#head-bar {
+.heads #head-bar {
   list-style-type: none;
   margin-top: 73px;
   padding: 0;
@@ -38,25 +41,36 @@ body {
 }
 
 #homepage {
+  width: 100%;
   line-height: 30px;
   text-align: center;
   letter-spacing: 3px;
   word-spacing: 5px;
 }
 
-#login {
-  line-height: 30px;
+#esports img {
+  display: block;
+  width: 25%;
+  margin-top: 30px;
+}
+
+.login {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
   text-align: center;
-  position: absolute;
-  left: 40%;
+  line-height: 30px;
   letter-spacing: 3px;
   word-spacing: 5px;
   width: 300px;
 }
 
-#signup {
-  position: relative;
-  left: 40%;
+.signup {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
   width: 300px;
   line-height: 30px;
   letter-spacing: 3px;
@@ -175,18 +189,9 @@ ul {
   left: 540px;
 }
 
-#picture {
-  height: 120px;
-  width: 25%;
-  position: relative;
-  left: 670px;
-}
-
-#esports {
-  height: 120px;
-  width: 35%;
-  position: relative;
-  left: 630px;
+#picture img {
+  display: block;
+  width: 15%;
 }
 
 #fortnite {
@@ -260,43 +265,32 @@ li a:hover:not(.active) {
 }
 
 
-#footer {
+.footer {
   position: absolute;
-  left: 0;
   bottom: 0;
   width: 100%;
+  height: 50px;
   background-color: #333;
   color: white;
   text-align: center;
 }
 
-#footer2 {
+.footer2 {
   position: relative;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
+  height: 50px;
   background-color: #333;
   color: white;
   text-align: center;
-  height: 50px;
+  line-height: 50px;
 }
 
 section {
   text-align: center;
   padding-bottom: 50px;
 }
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-/* Bordered form
-form {
-  border: 3px solid #f1f1f1;
-} */
 
 /* Full-width inputs */
 input[type=text], input[type=password], input[type=datetime-local] {
@@ -377,10 +371,10 @@ span.psw {
 
 /* Class to center images */
 .center {
-  display: inline-block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 49.8%;
+  width: 50%;
 }
 
 .center2 {

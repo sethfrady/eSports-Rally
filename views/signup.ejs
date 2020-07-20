@@ -12,11 +12,11 @@
 
   <!-- Header/Image -->
   <body>
-    <div id="heads">
+    <div class="heads">
       <% include partials/header.ejs %>
     </div>
 
-    <main id="all">
+    <main class="all">
       <% include partials/navigation.ejs %>
 
       <!-- Text/Title -->
@@ -29,7 +29,7 @@
         </ul>
       </div>
       <section>
-      <div id="signup">
+      <div class="signup">
         <h2>
           <br> Register for Esports Rally
         </h2>
@@ -49,7 +49,7 @@
       </section>
     <% } else { %>
       <section>
-      <div id="signup">
+      <div class="signup">
         <h2>
           <br> Register for Esports Rally
         </h2>
@@ -68,9 +68,11 @@
       </div>
       </section>
    <% } %>
+  </main>
 
-    <!-- Footer -->
-    <% include partials/footer2.ejs %>
-    </main>
+    <!-- Footer 2 -->
+    <div class="footer">
+      <% include partials/footer.ejs %>
+    </div>
   </body>
 </html>
