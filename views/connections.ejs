@@ -19,22 +19,25 @@
     <main class="all">
       <% include partials/navigation.ejs %>
 
+      <div class="text">
+        <h1> You can browse meet-up groups! </h1>
+      </div>
+
       <!-- Categories -->
       <div class="categories">
         <h3 id="pc"> PC </h3>
         <h3 id="xbox"> XBOX </h3>
         <h3 id="ps4"> PS4 </h3>
       </div>
-        <div class="categories2">
-         <ul>
-          <% for(var i = 0; i < data.length; i++) { %>
-            <li class="cats">
+      
+      <div class="categories2">
+        <% for(var i = 0; i < data.length; i++) { %>
+            <div class="cats">
               <a href="/connection?connectionID=<%= data[i].connectionID %>">
               <%= data[i].connectionTopic %>
               </a>
-            </li>
+            </div>
           <% } %>
-        </ul>
       </div>
 
     <!-- Footer -->

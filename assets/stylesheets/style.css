@@ -116,20 +116,28 @@ mark {
 
 .categories {
   text-align: center;
-  list-style-type: none;
-  column-count: 3;
+  margin-top: 50px;
+  columns: 3;
   column-rule: 3px double #00FFFF;
   position: relative;
-  top: 80px;
+  top: 70px;
 }
 
 .categories2 {
   text-align: center;
-  list-style-type: none;
-  column-count: 3;
+  columns: 3;
   column-rule: 3px double #00FFFF;
   position: relative;
   top: 70px;
+}
+
+.text {
+  text-align: center;
+  margin-top: 100px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .new {
@@ -139,18 +147,8 @@ mark {
   top: 100px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.cats {
-  position: relative;
-  right: 19px;
-}
-
 .cats a {
   text-decoration: none;
-  list-style-type: none;
 }
 
 #head-bar li {
