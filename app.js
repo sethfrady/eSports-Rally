@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-var connectionDB = require('./models/connectionDB');
 
 // Session handling
 var session = require("express-session");
